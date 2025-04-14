@@ -25,7 +25,7 @@ const Register = () => {
     try {
       const result = await register(username, password);
       if (result.success) {
-        navigate('/dashboard');
+        navigate('/login');
       } else {
         setError(result.message || 'Registration failed');
       }
